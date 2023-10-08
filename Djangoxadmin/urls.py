@@ -16,6 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from apps.message_form.views import messgae_form
+
 urlpatterns = [
+    path('xxx/', messgae_form),
+    path('', messgae_form),
     path('admin/', admin.site.urls),
 ]
