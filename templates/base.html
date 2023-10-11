@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{{ name }}
+{% for user in list %}
+    用户名： {{ user }}
+{% endfor %}
+
+{% extends './' %}
+{% block sidebar %}
+    {{ block.super }}
+{% endblock %}
+</body>
+</html>
