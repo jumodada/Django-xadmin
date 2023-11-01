@@ -1,4 +1,4 @@
-"""my_project URL Configuration
+"""Djangoxadmin URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.0/topics/http/urls/
@@ -20,9 +20,8 @@ from django.views.static import serve
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('hello/', include('hello.urls')),
 ]
-handler500 = 'my_project.views.page_500'
+handler500 = 'Djangoxadmin.views.page_500'
 
 if settings.DEBUG:
     urlpatterns += [
